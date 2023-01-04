@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/image/icons8-r2-d2.svg" alt="">
+    </header>
+
+    <main>
+        <div class="container">
+                <!-- Titulo -->
+            <div class="titulo">
+                <h1> Ma<span>th</span>.Sor<span>t</span>e<span>io</span></h1>
+            </div>
+
+                <!-- campo para adcionar o nome das pessoas que vão participar do sorteio -->
+            <div class="campo-adicionar">
+                <input id="nomes" type="text">
+                <div class="botao">
+                    <button id="submit" onclick="adicionar()"> Adicionar </button>
+                </div>
+            </div>
+
+
+
+                <!-- campo com os nomes que vão ser sorteados -->
+            <div class="box">
+                <div class="campo-participante">
+                    <div id="participantes" class="participantes">
+                        <div class="botao">
+                            <button onclick="gerarLista()">Lista</button>
+                        </div>
+                        
+                        <div class="lista-geral">
+                            <div class="subtitulo">
+                                <h2 id="lista-participantes">Nenhum nome foi adicionado</h2>
+                            </div>
+                            
+                            <ul id="lista"></ul>
+                        </div>
+    
+
+                        <div class="container-pessoa-sorteada">
+                                <!-- Nome da pessoa sorteada -->
+                            <div class="texto"> <h2 id="pessoa-sorteada"></h2> </div>
+                            <div class="img-foguete"> <div id="img-foguete"></div> </div>
+                            <div class="nome-sorteado"><div id="nome-pessoa"></div></div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+    
+                    <!-- botão para sortear -->
+                <div class="botao" id="sortear">
+                    <button type="reset" onclick="sortear()"> Sortear </button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="info">
+            <div class="info-desenvolvedor">
+                <p>© developed by Moises</p>
+            </div>
+
+            <div class="github-info">
+                
+                <a href="https://github.com/MoisesssDev"> <img src="assets/image/icons8-github.svg" alt=""></a>
+            
+            </div>
+            
+            <div class="linkedin-info">
+                 
+                <a href="https://www.linkedin.com/in/mois%C3%A9s-almeida-674435245/"> <img src="assets/image/icons8-linkedin.svg" alt=""></a>
+
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
